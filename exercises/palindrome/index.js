@@ -15,15 +15,15 @@ function palindrome(str) {
   // return false
   //###########################################################################
   //using while loop
-  let left = 0
-  let right = str.length - 1
+  let left = 0;
+  let right = str.length - 1;
   while (left < right) {
     if (str[left] === str[right]) {
-      left++
-      right--
-    } else return false
+      left++;
+      right--;
+    } else return false;
   }
-  return true
+  return true;
   //###########################################################################
   //using reverse()
   // let reversed = str.split('').reduce((rev, char) => char + rev, '')
@@ -39,4 +39,4 @@ function palindrome(str) {
 }
 
 // console.log(palindrome('aba'))
-module.exports = palindrome
+module.exports = palindrome;
